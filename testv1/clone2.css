@@ -1,0 +1,376 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+.Container{
+    width: 100vw;
+    font-family: "Neue Montreal", sans-serif;
+    font-weight: normal;
+}
+#shopify-section-menu-hero{
+    width: 100%;
+    height: 60rem;
+    /* background-color: #d4b48f; */
+    padding-bottom: 5rem;
+}
+.background{
+    background-color: #255A5B;
+    height: 78.8vh;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+.header{
+    display: flex;
+    padding: 20px;
+    padding-top: 40px;
+    height: 8.90rem;
+    align-items: center;
+    justify-content: space-between;
+}
+.left-header{
+    align-items: center;
+    padding-left: 10px;
+    display: flex;
+    justify-content: center;
+    width: 33%;
+}
+.nav-content{
+    align-items: center;
+    display: flex;
+    gap: 22px;
+    height: 100%;
+}
+.right-header{
+    width: 33%;
+    align-items: center;
+    height: 100%;
+    gap: 20px;
+    display: flex;
+    padding-right: 1rem;
+    justify-content: flex-end;
+    display: flex;
+}
+.center-header{
+    height: 100%;
+    width: 33%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.head-logo{
+    font-family: "Joanna Nova", serif;
+    font-size: 3.1rem;
+    cursor: pointer;
+    letter-spacing: 0.2rem;
+    width: 100px;
+    line-height: 0.7;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    margin-right: 2rem;
+}
+.fa-bars{
+    font-size: 34px;
+    background-color: #BE9471;
+    padding: 16px;
+    color: #FFFFFF;
+    border-radius: 2px;
+}
+.btn-rese{
+    padding: 20px 32px;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    height: 65px;
+    transition: 0.3s;
+    color: #FFFFFF;
+    background-color: #BE9471;
+}
+.btn-rese:hover{
+    background-color: gray;
+}
+.cart-content{
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 16px;
+}
+.logo-block{
+    margin-left: 20%;
+}
+.logo{
+    width: 190px;
+    height: 130px;
+}
+.lock1{
+    display: none;
+}
+.menu, .contact, .room, .shop, .event,a {
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    position: relative;
+}
+.home{
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    position: relative; 
+}
+.contact::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -5px; 
+    transform: translateX(-50%);
+    width: 70px;
+    height: 2px;
+    background-color: #d4b48f; 
+    border-radius: 10px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+}
+.menu::after, .home::after, .room::after, .shop::after, .event::after
+,.cart-content::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -5px; 
+    transform: translateX(-50%) scaleX(0); 
+    width: 50px; 
+    height: 2px;
+    background-color: #d4b48f;
+    border-radius: 10px; 
+    transition: transform 0.3s ease; 
+}
+.event:hover::after, .menu:hover::after, .contact:hover::after, 
+.room:hover::after, .shop:hover::after{
+    transform: translateX(-50%) scaleX(1); 
+}
+.sticky-side{
+    width: 15rem;
+    position: fixed;
+    z-index: 500;
+    top: 60%;
+    transform: translateY(-50%) rotate(270deg);
+    border-width: 1px;
+    height: 4.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-color: #d4b48f;
+    border-style: solid;
+    right: 0%;
+    left: 90.2%;
+    transform: rotate(270deg);
+}
+.btn-block{
+    padding: 4px;
+}
+.sticky{
+    width: 14.4rem;
+    text-align: center;
+    color: #FFFFFF;
+    height: 3.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #BE9471;
+    font-size: 1rem;
+}
+.instagram-content{
+    position: absolute;
+    top: 70%;
+    gap: 10px;
+    color: #dfdbdb;
+    left: -2.3%;
+    transform: rotate(270deg);
+}
+.insta{
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.fa-instagram{
+    font-size: 18px;
+}
+.background-text {
+    position: absolute;
+    top: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    left: 50%;
+    color: #FFFFFF;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 18.7rem;
+    font-size: 6.2rem;
+    line-height: 1;
+    letter-spacing: -0.2rem;
+
+    text-transform: uppercase;
+    color: #fff;
+    z-index: 200;
+}
+.image-block{
+    position: absolute;
+    width: 32%;
+    background: url("contact-hero_1200x.webp");
+    left: 35.3%;
+    background-size: cover;
+    background-position: center;
+    top: 53%;
+    height: 87vh;
+}
+.detail1{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 0;
+    margin-bottom: 1.8%;
+    letter-spacing: 0.3px;
+}
+.detail2{
+    font-family: "Joanna Nova", serif;
+    font-size: 6rem;
+    font-weight: 600;
+}
+@font-face {
+    font-family: "Joanna Nova";
+    src: url(Fonts/Joanna\ Nova\ W06\ Regular.woff) format(woff);
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Joanna Nova";
+    src: url(Fonts/Joanna\ Nova\ W06\ Bold.woff) format(woff);
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Neue Montreal";
+    src: url(Fonts/Neue\ Montreal\ Regular.woff) format(woff);
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Neue Montreal";
+    src: url(Fonts/Neue\ Montreal\ Bold.woff) format(woff);
+    font-weight: 600;
+    font-style: normal;
+  }
+
+.arrow-down-container{
+    width: 100%;
+    height: 8.72rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 30%;
+    
+}
+
+.padding-arrow-down{
+    max-width: 7;
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.arrow-down-menu{
+    width: 61.88px;
+    height: 28px;
+    text-transform: uppercase;
+    font-size: 1.125rem;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 1.25rem;
+}
+
+h1{
+    font-size: inherit;
+    font-weight: inherit;
+}
+.arrow-down-con{
+    width: 2.5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.arrow-down {
+    animation: bounce 1s infinite;
+    display: block;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(-25%);
+        animation-timing-function: cubic-bezier(0.8,0,1,1);
+    }
+    50% {
+        transform: none;
+        animation-timing-function: cubic-bezier(0,0,0.2,1);
+    }
+}
+
+.image-and-insta{
+    width: 100%;
+    height: 40rem;
+    /* background-color: #BE9471; */
+    /* position: relative; */
+    margin-top: -40px;
+}
+
+.instagram-content{
+    position: absolute;
+    top: 60%;
+    gap: 10px;
+    right: 90%;
+    width: 200px;
+    transform: rotate(270deg);
+    color: #FFFFFF;
+}
+
+.insta{
+    font-size: 0.875rem;
+    display: flex;
+    align-items: center;
+    gap: 0.875rem;
+}
+
+.fa-instagram{
+    font-size: 1rem;
+}
+
+#image-container{
+    width: 1024px;
+    height: 629.33px;
+    z-index: 20;
+    /* position: absolute; */
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+
+}
+
+#image-table{
+    width: 944px;
+    height: 629.33px;
+    opacity: 1;
+    overflow: hidden;
+}
+
+
+
+
